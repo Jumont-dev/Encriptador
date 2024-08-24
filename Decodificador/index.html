@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Textos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Decodificador de Textos</h1>
+    <h2>Criptografar e Descriptografar Mensagens</h2>
+    <p class="note">NÃO USE LETRAS MINÚSCULAS E ACENTOS</p>
+
+    <div class="container">
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Digite sua mensagem aqui..." oninput="sanitizeText()"></textarea>
+            <div class="buttons">
+                <button class="encrypt" onclick="encryptText()">Criptografar</button>
+                <button class="decrypt" onclick="decryptText()">Descriptografar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <textarea id="outputText" readonly></textarea>
+            <button onclick="copyText()">Copiar</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Desenvolvido por <a href="https://www.linkedin.com/in/jumont-dev?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Juliana Monteiro</a>, 14/08/2024 a 24/08/2024.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

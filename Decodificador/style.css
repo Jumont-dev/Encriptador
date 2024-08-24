@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+body {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+
+.input-section,
+.output-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px; /* Garantir que ambos os blocos tenham a mesma largura mínima */
+}
+
+.input-section {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.output-section {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    resize: none; /* Desabilita o redimensionamento da textarea */
+}
+
+.buttons {
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.buttons button.encrypt {
+    background-color: #bf5a9f;
+    color: white;
+}
+
+.buttons button.decrypt {
+    background-color: #bf5a9f;
+    color: white;
+}
+
+.output-section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #bf5a9f;
+    color: white;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.note {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
